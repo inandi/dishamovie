@@ -15,13 +15,6 @@
 	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 	<link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-1373074241522581",
-          enable_page_level_ads: true
-     });
-</script>
 </head>
 <body>
 	<header id="header">
@@ -34,7 +27,6 @@
 	<section id="intro">
 		<div class="intro-text">
 			<h2>Story of Life</h2>
-			<p style="display: none;">We are team of talanted designers making websites with Bootstrap</p>
 			<a href="#about" class="btn-get-started scrollto">Get Started</a>
 		</div>
 		<style type="text/css" media="screen">
@@ -50,13 +42,13 @@
 		</style>
 		<div class="product-screens">
 			<div class="product-screen-1 wow fadeInUp product-screen-div" data-wow-delay="0.4s" data-wow-duration="0.6s">
-				<img src="uploads/Disha_Movie_Image_75.jpg" alt="" class="img-responsive">
+				<img src="uploads/Disha_Movie_Image_75.jpg" alt="Disha Bengali Movie" class="img-responsive">
 			</div>
 			<div class="product-screen-2 wow fadeInUp product-screen-div" data-wow-delay="0.2s" data-wow-duration="0.6s">
-				<img src="uploads/Disha_Movie_Image_53.jpg" alt="" >
+				<img src="uploads/Disha_Movie_Image_53.jpg" alt="Disha Bengali Movie" >
 			</div>
 			<div class="product-screen-3 wow fadeInUp product-screen-div" data-wow-duration="0.6s">
-				<img src="uploads/Disha_Movie_Image_71.jpg" alt="" >
+				<img src="uploads/Disha_Movie_Image_71.jpg" alt="Disha Bengali Movie" >
 			</div>
 		</div>
 	</section>
@@ -103,7 +95,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-5 features-img">
-						<img src="uploads/Disha_Movie_Image_52.jpg" alt="" class="wow fadeInLeft">
+						<img src="uploads/Disha_Movie_Image_52.jpg" alt="Disha Bengali Movie" class="wow fadeInLeft">
 					</div>
 					<div class="col-lg-8 col-md-7 ">
 						<div class="row">
@@ -116,7 +108,7 @@
 							<div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
 								<iframe width="320" height="180" src="https://www.youtube.com/embed/GcXhfPgUxME" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
-							<div class="col-lg-6 col-md-6 box wow fadeInRight data-wow-delay="0.2s"><iframe width="320" height="180" src="https://www.youtube.com/embed/FTvDQAPVpio" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s"><iframe width="320" height="180" src="https://www.youtube.com/embed/FTvDQAPVpio" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
 								<iframe width="320" height="180" src="https://www.youtube.com/embed/-aRqmuGvVJk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -134,7 +126,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<img class="advanced-feature-img-right wow fadeInRight" style="max-width: 55%" src="uploads/Disha_Movie_Image_85.jpg" alt="">
+							<img class="advanced-feature-img-right wow fadeInRight" style="max-width: 55%" src="uploads/Disha_Movie_Image_85.jpg" alt="Disha Bengali Movie">
 							<div class="wow fadeInLeft">
 								<h2>Producer & Executive Producer</h2>
 								<h3>Two brothers fighting to do something different in Life</h3>
@@ -148,7 +140,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 text-center">
-							<img src="uploads/Disha_Movie_Image_14.jpg" alt="">
+							<img src="uploads/Disha_Movie_Image_14.jpg" alt="Disha Bengali Movie">
 						</div>
 					</div>
 				</div>
@@ -157,7 +149,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<img class="advanced-feature-img-right wow fadeInRight" src="uploads/Disha_Movie_Image_94.jpg" style="max-width: 55%"  alt="">
+							<img class="advanced-feature-img-right wow fadeInRight" src="uploads/Disha_Movie_Image_94.jpg" style="max-width: 55%"  alt="Disha Bengali Movie">
 							<div class="wow fadeInLeft">
 								<h2>Newspaper Talking</h2>
 								<h3>Pratidin Bengali Newspaper</h3>
@@ -456,7 +448,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_82.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_82.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/sanjoy.bardhan3?ref=br_rs">Sanjoy Bardhan</a></h4>
 							<span>Director</span>                                
 							<span>"A Journy That Never Ends" </span>                                
@@ -464,15 +456,15 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_49.jpg" alt=""></div>
-							<h4><a target="_blank" href="https://www.facebook.com/iGobinda">Gobinda Nandi</a></h4>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_49.jpeg" alt="Disha Bengali Movie"></div>
+							<h4><a target="_blank" href="https://twitter.com/iamgobinda">Gobinda Nandi</a></h4>
 							<span>Producer</span>                                
 							<span>"Maybe Our Team Is Tiny, Not Our Dreams"</span>                                
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_48.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_48.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="#">Chandan Roy Chowdhuri</a></h4>
 							<span>Music</span>                                
 							<span>"An Efficient Team"</span>                                
@@ -480,7 +472,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_47.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_47.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/music.sourav?ref=br_rs">Sourav Chakraborty</a></h4>
 							<span>Music</span>                                
 							<span>"Feels Good To Be a Member Of Disha Team"</span>                                
@@ -488,7 +480,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_46.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_46.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/swarnali.poddar.9?ref=br_rs">Swarnali Poddar</a></h4>
 							<span>Actress</span>                                
 							<span>"Good Effort Comes With Satisfying Verdict"</span>                                
@@ -496,7 +488,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_44.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_44.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/pickloo?ref=br_rs">Partha Pratim Roy</a></h4>
 							<span>Actor</span>                                
 							<span>"Akash Was A Challenging Character"</span>                                
@@ -504,7 +496,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_45.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_45.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/piu.mondal.7374?ref=br_rs">Piu Mondal</a></h4>
 							<span>Actress</span>                                
 							<span>"It Was Fun To Work Here"</span>                                
@@ -512,7 +504,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_43.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_43.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=532153110&ref=br_rs">Soumyadeep Saha</a></h4>
 							<span>Dubbing</span>                                
 							<span>"Didn't Even Feel My First Time In Studio With This Team"</span>                                
@@ -520,7 +512,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_42.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_42.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100001066619063&ref=br_rs">Subhasish Das</a></h4>
 							<span>Art</span>                                
 							<span>"Path Was Tough, Cruel, Lonely, But Somehow We Faught It Well"</span>                                
@@ -528,7 +520,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_41.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_41.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100003271796983&ref=br_rs">Biplab Mridha</a></h4>
 							<span>Cast</span>                                
 							<span>"They Were To Ruin, Destroy But Together We Shut Their Big Mouth & Shown The Courtesy"</span>                                
@@ -536,7 +528,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_51.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_51.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/yuvaraj.bhattacharyya?ref=br_rs">Yuvraj Bhattacharya</a></h4>
 							<span>PR</span>                                
 							<span>"A Well Wisher"</span>                                
@@ -544,7 +536,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_83.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_83.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/susmit.mondal.98?ref=br_rs">M Susmit</a></h4>
 							<span>Editor</span>                                
 							<span>"All The Best Team"</span>                                
@@ -552,7 +544,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_92.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_92.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/gksusmit?ref=br_rs">Goutam Halder</a></h4>
 							<span>DI</span>                                
 							<span>"They Kept Me Awake For Nights...Lol"</span>                                
@@ -560,7 +552,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_12.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_12.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100011424186597&ref=br_rs">Nil</a></h4>
 							<span>Singer</span>                                
 							<span>"I Sang The Song 'Sahor' Because It Defines The City Of Joy"</span>                                
@@ -568,7 +560,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="uploads/Disha_Movie_Image_11.jpg" alt=""></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_11.jpg" alt="Disha Bengali Movie"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100001108996657&ref=br_rs">Himaghna Chanda</a></h4>
 							<span>Lyric</span>                                
 							<span>"All The Best"</span>                                
@@ -587,231 +579,231 @@
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_65.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_65.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_65.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_1.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_1.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_1.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_2.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_2.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_2.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_3.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_3.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_3.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_4.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_4.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_4.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="uploads/Disha_Movie_Image_15.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_15.jpg" alt="">
+							<a href="uploads/Disha Movie Image (1).jpg" class="gallery-popup">
+								<img src="uploads/Disha Movie Image (1).jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_8.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_8.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_8.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_9.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_9.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_9.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_15.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_15.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_15.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_16.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_16.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_16.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_17.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_17.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_17.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_19.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_19.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_19.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_18.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_18.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_18.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_26.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_26.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_26.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_21.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_21.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_21.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_24.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_24.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_24.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_25.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_25.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_25.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_27.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_27.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_27.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_28.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_28.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_28.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_29.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_29.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_29.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_37.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_37.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_37.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_40.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_40.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_40.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_54.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_54.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_54.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_38.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_38.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_38.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_55.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_55.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_55.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_56.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_56.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_56.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_57.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_57.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_57.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_58.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_58.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_58.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_61.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_61.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_61.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_62.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_62.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_62.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_63.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_63.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_63.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_64.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_64.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_64.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
 							<a href="uploads/Disha_Movie_Image_96.jpg" class="gallery-popup">
-								<img src="uploads/Disha_Movie_Image_96.jpg" alt="">
+								<img src="uploads/Disha_Movie_Image_96.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
@@ -829,7 +821,7 @@
 								<a target="_blank" href="https://twitter.com/DishaMovie" class="twitter"><i class="fa fa-twitter"></i></a>
 								<a target="_blank" href="https://www.facebook.com/DishaBengaliFilm?ref=hl" class="facebook"><i class="fa fa-facebook"></i></a>
 								<a target="_blank" href="https://geo.itunes.apple.com/us/album/disha-original-motion-picture-soundtrack-single/id1019451883?mt=1&app=music" class="instagram"><i class="fa fa-apple"></i></a>
-								<a target="_blank" href="https://plus.google.com/107790277470028516206" class="google-plus"><i class="fa fa-google-plus"></i></a>
+								<!-- <a target="_blank" href="https://plus.google.com/107790277470028516206" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
 								<a target="_blank" href="https://www.youtube.com/channel/UCu3wmXLxo0cKH0HfksrrIPg" class="youtube"><i class="fa fa-youtube"></i></a>
 								<a target="_blank" href="http://www.imdb.com/title/tt4213694/?ref_=fn_al_tt_1" class="imdb"><i class="fa fa-imdb"></i></a>
 							</div>

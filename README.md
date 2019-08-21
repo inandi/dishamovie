@@ -1,4 +1,4 @@
-# dishamovie.in
+# http://dishamovie.in
 
 A small town girl Disha, travels to Kolkata, with the dream of making it big. She has all kinds of disappointments in life, especially in relationships. She believed that love is a terrible thing that can only make one suffer. Kolkata had something else in store for her. She gets allured to the world of escorts and prostitutes. She felt, she had nothing to lose. She never had love, nor did she get any respect from others, ever. She decides to embark on a journey of an escort. She feels excited with the thought of money, sex, friendship etc.
 

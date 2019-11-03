@@ -1,3 +1,26 @@
+<?php 
+//Get an instance of S3 Client. This is one one to do it:
+// $s3Client = new S3Client([
+//     'version'     => 'latest',
+//     'region'      => 'us-west-2', //Region of the bucket
+//     'credentials' => array(
+//         'key' => 'YOUR-ACCOUNT-KEY',
+//         'secret'  => 'YOUR-ACCOUNT-SECRET',
+//     )
+// ]);
+
+//Get a command to GetObject
+// $cmd = $s3Client->getCommand('GetObject', [
+//     'Bucket' => 'YOUR-BUCKET-NAME',
+//     'Key'    => 'YOUR-FILE-KEY'
+// ]);
+
+//The period of availability
+// $request = $s3Client->createPresignedRequest($cmd, '+10 minutes');
+
+//Get the pre-signed URL
+// $signedUrl = (string) $request->getUri();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +29,7 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="gobinda nandi" name="producer of disha">
 	<meta content="disha" name="disha bengali movie 2015">
-	<link href="uploads/Disha_Movie_Image_84.jpg" rel="icon">
+	<link href="https://dishabengalimovie.s3.ap-south-1.amazonaws.com/Disha_Movie_Image_84.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBwaCmFwLXNvdXRoLTEiSDBGAiEAyBzHiHibUXAvp6ZTs5ZgyPXoby%2FmO3T0J%2BSqn0urMVwCIQCT1J6G%2Bca33EOeDPWn1utyZV6nFebjm3QotxW0fum%2BAiqYAgg1EAAaDDg1MTMyNjg2MjAwNCIMSvHULqlINCSMY3g9KvUBXDZunrwS%2Bbp2kbOzSb1c3ubmKVZtA0PXhunrp0JJgjgC4%2FPkl%2FNKXVvBGtrfZdT3RUYzZRTJrBLBUAFoSnD7OYovcwy7yniodPCQ9FUBdMwZ78qb%2F%2F6bg8YgZjPQ3DmP2e%2BlujrgoRAJbhYDdNBNW7xbMuCDkWwJ3pAi6EOFihxyoJaB%2BjRuslmNAXie8cGuOzKdk4HZ7c1hAUdyWHSMf33kM68NQRDogQqu8BimBZ5NhhH1KAFGxorWSxr1RCCBSy41vbrvchtlvN%2BvZYkvFRw3gBDKdyDcDJ7fOkNgQ3CVjIpg8ZWFlqRPkGBlZz6PaSe86uwwq4f87QU6jQPLuAL7%2BZ0Rv3Dhb2%2FV%2BSh6xVwfFithioR4CD7HLmka5fy7cwe36e95jY6iM0OvKtjgt0Kvk9Bbjvy5jVCpECoWNT0qQ%2FGESk4g%2FQTsOdn%2BbubhjcZnDpuO93W6u8kY5lQiZKkRop7WfaeXpFtuNpolWqLJ7A7GzlrFT8S01W2H4rwyAQPsmUrqTUVbkP0WCz%2BljRaA4WIY1BRO5oh5g4BgqrtpLtstztxoilEThIL5K%2B5IuBIg%2BKeiY5PITUEGyVyCP5PHRBIqFCt7Y2ObqBl9WApR0mapP%2FOOpoWzIp7P3Q5%2B2mzWORATzOoCaqUB%2FtLMqwMvERaT7cLjk2ZsnMkekdgsgMu545EoRnNJUC1tvyms7vQo6WjRFVTdyMEkzXPy2Yzx%2BMkqenjnz3IostyGFwiIJQ5p4cvNYNzTZM4%2FNsxuQkvOn8S%2Bnb%2Bp3J06WiGKXb%2BClBBv7jnPO4G36AUJa5oQIcFMx8i2jra4dSvluIyWxURgdJzL5CnxRKD0kgz3SzOsQLtV37j8nFcq&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191103T203238Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA4MNYJAK2ENE3S5HK%2F20191103%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=ac9b6bfd3c6f527f2d74799e8ed78cbea51816aa59ad44feb1c47520962a0afe" rel="icon">
 	<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
 	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">

@@ -41,6 +41,26 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 	<link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
+<style type="text/css">
+#intro {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url("<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_84.jpg']; ?>") center top no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.product-screen-div 
+{ 
+	width:300px;
+	height:300px;    
+	position:relative;
+}
+.product-screen-div img 
+{
+	max-width: 300px;
+	position:absolute;
+}
+</style>
 <body>
 	<header id="header">
 		<div class="container">
@@ -54,17 +74,6 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 			<h2>Story of Life</h2>
 			<a href="#about" class="btn-get-started scrollto">Get Started</a>
 		</div>
-		<style type="text/css" media="screen">
-			.product-screen-div { 
-				width:300px;
-				height:300px;    
-				position:relative;
-			}
-			.product-screen-div img {
-				max-width: 300px;
-				position:absolute;
-			}
-		</style>
 		<div class="product-screens">
 			<div class="product-screen-1 wow fadeInUp product-screen-div" data-wow-delay="0.4s" data-wow-duration="0.6s">
 				<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_75.jpg']; ?>" alt="Disha Bengali Movie" class="img-responsive">
@@ -87,8 +96,8 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 				</div>
 				<div class="row">
 					<div class="col-lg-6 about-img wow fadeInLeft">
-					    <iframe width="580" height="300" src="https://www.youtube.com/embed/n-Wm3AUaFd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					   
+						<iframe width="580" height="300" src="https://www.youtube.com/embed/n-Wm3AUaFd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 					</div>
 					<div class="col-lg-6 content wow fadeInRight">
 						<p align="justify">

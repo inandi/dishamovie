@@ -1,38 +1,14 @@
-<?php 
-require 'lib/aws/vendor/autoload.php';
-use Aws\S3\S3Client;  
-use Aws\Exception\AwsException;
-$s3Client = new S3Client([
-	'version'     => 'latest',
-	'region'      => 'ap-south-1',
-	'credentials' => array(
-		'key' => 'AKIA4MNYJAK2MBSCZQWI',
-		'secret'  => '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',
-	)
-]);
-$bucketObject = $s3Client->listObjects([
-	'Bucket' => 'dishabengalimovie',
-]);
-$s3ObjectDishaMovie = [];
-foreach ($bucketObject['Contents'] as $key => $value) {
-	$cmd = $s3Client->getCommand('GetObject', [
-		'Bucket' => 'dishabengalimovie',
-		'Key'    => $value['Key']
-	]);
-	$request = $s3Client->createPresignedRequest($cmd, '+20 minutes');
-	$s3ObjectDishaMovie[$value['Key']] = (string) $request->getUri();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Disha</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="gobinda nandi" name="producer of disha">
+	<meta content="kamalesh nandi" name="executive producer of disha">
 	<meta content="disha" name="disha bengali movie 2015">
-	<link href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_84.jpg']; ?>" rel="icon">
-	<!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+	<link href="uploads/Disha_Movie_Image_84.jpg" rel="icon">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
 	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -42,30 +18,31 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <style type="text/css">
-#intro {
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url("<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_84.jpg']; ?>") center top no-repeat;
-	background-size: cover;
-	position: relative;
-}
-.product-screen-div 
-{ 
-	width:300px;
-	height:300px;    
-	position:relative;
-}
-.product-screen-div img 
-{
-	max-width: 300px;
-	position:absolute;
-}
+	#intro {
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url("uploads/Disha_Movie_Image_84.jpg") center top no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	.product-screen-div {
+		width: 300px;
+		height: 300px;
+		position: relative;
+	}
+
+	.product-screen-div img {
+		max-width: 300px;
+		position: absolute;
+	}
 </style>
+
 <body>
 	<header id="header">
 		<div class="container">
 			<div id="logo" class="pull-left">
-				<h1><a href="#intro" class="scrollto">DISHA</a></h1>
+				<h1><a href="#intro" class="scrollto">DISHA(2015)</a></h1>
 			</div>
 		</div>
 	</header>
@@ -76,13 +53,13 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 		</div>
 		<div class="product-screens">
 			<div class="product-screen-1 wow fadeInUp product-screen-div" data-wow-delay="0.4s" data-wow-duration="0.6s">
-				<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_75.jpg']; ?>" alt="Disha Bengali Movie" class="img-responsive">
+				<img src="uploads/Disha_Movie_Image_75.jpg" alt="Disha Bengali Movie" class="img-responsive">
 			</div>
 			<div class="product-screen-2 wow fadeInUp product-screen-div" data-wow-delay="0.2s" data-wow-duration="0.6s">
-				<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_53.jpg']; ?>" alt="Disha Bengali Movie" >
+				<img src="uploads/Disha_Movie_Image_53.jpg" alt="Disha Bengali Movie">
 			</div>
 			<div class="product-screen-3 wow fadeInUp product-screen-div" data-wow-duration="0.6s">
-				<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_71.jpg']; ?>" alt="Disha Bengali Movie" >
+				<img src="uploads/Disha_Movie_Image_71.jpg" alt="Disha Bengali Movie">
 			</div>
 		</div>
 	</section>
@@ -103,16 +80,16 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 						<p align="justify">
 							A small town girl Disha, travels to Kolkata, with the dream of making it big. She has all kinds of disappointments in life, especially in relationships. She believed that love is a terrible thing that can only make one suffer. Kolkata had something else in store for her. She gets allured to the world of escorts and prostitutes. She felt, she had nothing to lose. She never had love, nor did she get any respect from others, ever. She decides to embark on a journey of an escort. She feels excited with the thought of money, sex, friendship etc.
 						</p>
-						<p  align="justify">
+						<p align="justify">
 							In a short span of time, she becomes quite well known in her circle. There comes a time when nearly every client needs her. At this juncture, she comes across 2 very strange clients. One of them refuses to touch her and prefers to talk to her, while the other had weird fantasies. She gets entangled with both of them and the very thought of being with them, gives her goose bumps. Slowly she realizes that love has struck her. In her journey, she also befriends one of her colleagues, who slowly becomes her best pal.
 						</p>
-						<p  align="justify">
+						<p align="justify">
 							Love, confusion, sex, money, all start happening to Disha at the same time. She realizes that slowly she has got sucked into this world so much that she needs desperately ‘love’ which she has been avoiding. Now she has to choose love, someone who could love her, someone who could understand her, someone who could set her free.
 						</p>
-						<p  align="justify">
+						<p align="justify">
 							But, future has something else in store for her and that becomes the culmination of her journey in this material world.
 						</p>
-						<p  align="justify">
+						<p align="justify">
 							Disha, is a life, a story, a journey every woman would relate to, in some way or the other.
 						</p>
 					</div>
@@ -129,7 +106,7 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-5 features-img">
-						<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_52.jpg']; ?>" alt="Disha Bengali Movie" class="wow fadeInLeft">
+						<img src="uploads/Disha_Movie_Image_52.jpg" alt="Disha Bengali Movie" class="wow fadeInLeft">
 					</div>
 					<div class="col-lg-8 col-md-7 ">
 						<div class="row">
@@ -160,11 +137,11 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<img class="advanced-feature-img-right wow fadeInRight" style="max-width: 55%" src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_85.jpg']; ?>" alt="Disha Bengali Movie">
+							<img class="advanced-feature-img-right wow fadeInRight" style="max-width: 55%" src="uploads/Disha_Movie_Image_85.jpg" alt="Disha Bengali Movie">
 							<div class="wow fadeInLeft">
 								<h2>Producer & Executive Producer</h2>
 								<h3>Two brothers fighting to do something different in Life</h3>
-								<p  align="justify">They are the brothers of dream. Regular life but extraordinary things their aim. They faced so many problem  during this film. But with some blessings of friends and family they finally launched this film.</p>
+								<p align="justify">They are the brothers of dream. Regular life but extraordinary things their aim. They faced so many problem during this film. But with some blessings of friends and family they finally launched this film.</p>
 							</div>
 						</div>
 					</div>
@@ -174,7 +151,7 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 				<div class="container">
 					<div class="row">
 						<div class="col-12 text-center">
-							<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_14.jpg']; ?>" alt="Disha Bengali Movie">
+							<img src="uploads/Disha_Movie_Image_14.jpg" alt="Disha Bengali Movie">
 						</div>
 					</div>
 				</div>
@@ -183,7 +160,7 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<img class="advanced-feature-img-right wow fadeInRight" src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_94.jpg']; ?>" style="max-width: 55%"  alt="Disha Bengali Movie">
+							<img class="advanced-feature-img-right wow fadeInRight" src="uploads/Disha_Movie_Image_94.jpg" style="max-width: 55%" alt="Disha Bengali Movie">
 							<div class="wow fadeInLeft">
 								<h2>Newspaper Talking</h2>
 								<h3>Pratidin Bengali Newspaper</h3>
@@ -216,15 +193,15 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 							<h3>Sahor</h3>
 							<iframe width="280" height="150" src="https://www.youtube.com/embed/6P__VQ7VOs4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<ul>
-								<li>    Singer: Nilalabja & Aparajita Chakraborty   </li>
-								<li>    Music Director: Nilalabja Chakraborty, Sourav Chakraborty   </li>
-								<li>    Lyricist: Himaghna Chanda   </li>
-								<li>    For Caller Tune:    </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Vodafone‬ For Callertune SMS CT 6109764 to 56789     </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Idea‬ For Dialer Tone SMS DT 6109764 to 55456    </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Docomo‬ SMS SET 6109764 to 543211    </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Airtel‬ For Hello Tune Dial Code 543211-4687127  </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎BSNL‬ For BSNL Tune SMS BT 6109764 to 56700  </li>
+								<li> Singer: Nilalabja & Aparajita Chakraborty </li>
+								<li> Music Director: Nilalabja Chakraborty, Sourav Chakraborty </li>
+								<li> Lyricist: Himaghna Chanda </li>
+								<li> For Caller Tune: </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Vodafone‬ For Callertune SMS CT 6109764 to 56789 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Idea‬ For Dialer Tone SMS DT 6109764 to 55456 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Docomo‬ SMS SET 6109764 to 543211 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Airtel‬ For Hello Tune Dial Code 543211-4687127 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎BSNL‬ For BSNL Tune SMS BT 6109764 to 56700 </li>
 							</ul>
 							<a href="https://itunes.apple.com/in/album/disha-original-motion-picture-soundtrack-single/id1019451883?app=music&ign-mpt=uo%3D4" class="get-started-btn">Listen</a>
 						</div>
@@ -234,16 +211,16 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 							<h3>Love</h3>
 							<iframe width="280" height="150" src="https://www.youtube.com/embed/nv9lBEtvD9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<ul>
-								<li>    Singer: Piki </li>
+								<li> Singer: Piki </li>
 								<li></li>
-								<li>    Music Director: Chandan Roy Chowdhury   </li>
-								<li>    Lyricist: Smarajit   </li>
-								<li>    For Caller Tune:   </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Vodafone‬ For Callertune SMS CT 6109763 to 56789    </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Idea‬ For Dialer Tone SMS DT 6109763 to 55456   </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Docomo‬ SMS SET 6109763 to 543211   </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Airtel‬ For Hello Tune Dial Code 543211-4687128   </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎BSNL‬ For BSNL Tune SMS BT 6109763 to 56700   </li>
+								<li> Music Director: Chandan Roy Chowdhury </li>
+								<li> Lyricist: Smarajit </li>
+								<li> For Caller Tune: </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Vodafone‬ For Callertune SMS CT 6109763 to 56789 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Idea‬ For Dialer Tone SMS DT 6109763 to 55456 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Docomo‬ SMS SET 6109763 to 543211 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Airtel‬ For Hello Tune Dial Code 543211-4687128 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎BSNL‬ For BSNL Tune SMS BT 6109763 to 56700 </li>
 							</ul>
 							<a href="https://itunes.apple.com/in/album/disha-original-motion-picture-soundtrack-single/id1019451883?app=music&ign-mpt=uo%3D4" class="get-started-btn" class="get-started-btn">Listen</a>
 						</div>
@@ -253,16 +230,16 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 							<h3>Crispy Crispy</h3>
 							<iframe width="280" height="150" src="https://www.youtube.com/embed/1N0CyDi4NXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<ul>
-								<li>    Singer: Rushi </li>
+								<li> Singer: Rushi </li>
 								<li></li>
-								<li>    Music Director: Chandan Roy Chowdhury </li>
-								<li>    Lyricist: Smarajit </li>
-								<li>    For Caller Tune: </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Vodafone‬ For Callertune SMS CT 6109762 to 56789  </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Idea‬ For Dialer Tone SMS DT 6109762 to 55456 </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Docomo‬ SMS SET 6109762 to 543211 </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎Airtel‬ For Hello Tune Dial Code 543211-4687126 </li>
-								<li><i class="ion-android-checkmark-circle"></i>    ‪#‎BSNL‬ For BSNL Tune SMS BT 6109762 to 56700 </li>
+								<li> Music Director: Chandan Roy Chowdhury </li>
+								<li> Lyricist: Smarajit </li>
+								<li> For Caller Tune: </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Vodafone‬ For Callertune SMS CT 6109762 to 56789 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Idea‬ For Dialer Tone SMS DT 6109762 to 55456 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Docomo‬ SMS SET 6109762 to 543211 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎Airtel‬ For Hello Tune Dial Code 543211-4687126 </li>
+								<li><i class="ion-android-checkmark-circle"></i> ‪#‎BSNL‬ For BSNL Tune SMS BT 6109762 to 56700 </li>
 							</ul>
 							<a href="https://itunes.apple.com/in/album/disha-original-motion-picture-soundtrack-single/id1019451883?app=music&ign-mpt=uo%3D4" class="get-started-btn" class="get-started-btn">Listen</a>
 						</div>
@@ -278,7 +255,7 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 				</div>
 				<ul id="faq-list" class="wow fadeInUp">
 					<li>
-						<a data-toggle="collapse"   href="#faq1">Ritam Sinha<i class="ion-android-remove"></i></a>
+						<a data-toggle="collapse" href="#faq1">Ritam Sinha<i class="ion-android-remove"></i></a>
 						<div id="faq1" class="collapse show" data-parent="#faq-list">
 							<p align="justify">" Kal biswa nari dibose aus - sri lankar khela fele bijoli cinema hall e jaowar decision ta ekebarei vul chilona seta somporke sure holam hall theke beriye .... Kichu din aage ABP te industry er outsider small scale producer der sathe kora politics porte giye bujhlam kaajta kotota kothin.... Sei poristhitite dariye amader erakom ekta sahoshi cinema upohaar deowar jonno thanx Gobinda da .... Tomar ei sot sahosher jonnoi women's day te meyedero ekta dik jante parlam... Protteke antorik chesta koreche ... Sera abishkar cinemar nayika r special appreciation amader priyo lombuji er jonno( Abhishek Babu ) .... Erokom joshilay role amader hall er moddhe sinti marte udbuddho korchilo .... Over all hats off Gobida .... U hv done it & in a quite fine manner "</p>
 						</div>
@@ -388,10 +365,7 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 						<div id="faq18" class="collapse" data-parent="#faq-list">
 							<p align="justify">I always knew Gobinda Bro, that you can do it ............ :)
 								You made me & all your well wishers very Proud .......... (Y)
-								LOVE YOU BRO <3 
-								&
-								GOD BLESS YOU :) (Y)
-							</p>
+								LOVE YOU BRO <3 & GOD BLESS YOU :) (Y) </p>
 						</div>
 					</li>
 					<li>
@@ -474,130 +448,130 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 				<div class="row wow fadeInUp">
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_50.jpg']; ?>" alt="Kamalesh Nandi"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_50.jpg" alt="Kamalesh Nandi"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100000703826323&ref=br_rs">Kamalesh Nandi</a></h4>
-							<span>Executive Producer</span>                                
-							<span>"Thank You Disha Team For Your Great Effort & Sacrifices. You'll Always Be Remembered Like Air, Wind & Fire"</span>                                
+							<span>Executive Producer</span>
+							<span>"Thank You Disha Team For Your Great Effort & Sacrifices. You'll Always Be Remembered Like Air, Wind & Fire"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_82.jpg']; ?>" alt="Sanjoy Bardhan"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_82.jpg" alt="Sanjoy Bardhan"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/sanjoy.bardhan3?ref=br_rs">Sanjoy Bardhan</a></h4>
-							<span>Director</span>                                
-							<span>"A Journy That Never Ends" </span>                                
+							<span>Director</span>
+							<span>"A Journy That Never Ends" </span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_49.jpeg']?>" alt="Gobinda Nandi"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_49.jpeg" alt="Gobinda Nandi"></div>
 							<h4><a target="_blank" href="https://twitter.com/iamgobinda">Gobinda Nandi</a></h4>
-							<span>Producer</span>                                
-							<span>"Maybe Our Team Is Tiny, Not Our Dreams"</span>                                
+							<span>Producer</span>
+							<span>"Maybe Our Team Is Tiny, Not Our Dreams"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_48.jpg']; ?>" alt="Chandan Roy Chowdhuri"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_48.jpg" alt="Chandan Roy Chowdhuri"></div>
 							<h4><a target="_blank" href="#">Chandan Roy Chowdhuri</a></h4>
-							<span>Music</span>                                
-							<span>"An Efficient Team"</span>                                
+							<span>Music</span>
+							<span>"An Efficient Team"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_47.jpg']; ?>" alt="Sourav Chakraborty"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_47.jpg" alt="Sourav Chakraborty"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/music.sourav?ref=br_rs">Sourav Chakraborty</a></h4>
-							<span>Music</span>                                
-							<span>"Feels Good To Be a Member Of Disha Team"</span>                                
+							<span>Music</span>
+							<span>"Feels Good To Be a Member Of Disha Team"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_46.jpg']; ?>" alt="Swarnali Poddar"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_46.jpg" alt="Swarnali Poddar"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/swarnali.poddar.9?ref=br_rs">Swarnali Poddar</a></h4>
-							<span>Actress</span>                                
-							<span>"Good Effort Comes With Satisfying Verdict"</span>                                
+							<span>Actress</span>
+							<span>"Good Effort Comes With Satisfying Verdict"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_44.jpg']; ?>" alt="Partha Pratim Roy"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_44.jpg" alt="Partha Pratim Roy"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/pickloo?ref=br_rs">Partha Pratim Roy</a></h4>
-							<span>Actor</span>                                
-							<span>"Akash Was A Challenging Character"</span>                                
+							<span>Actor</span>
+							<span>"Akash Was A Challenging Character"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_45.jpg']; ?>" alt="Piu Mondal"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_45.jpg" alt="Piu Mondal"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/piu.mondal.7374?ref=br_rs">Piu Mondal</a></h4>
-							<span>Actress</span>                                
-							<span>"It Was Fun To Work Here"</span>                                
+							<span>Actress</span>
+							<span>"It Was Fun To Work Here"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_43.jpg']; ?>" alt="Soumyadeep Saha"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_43.jpg" alt="Soumyadeep Saha"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=532153110&ref=br_rs">Soumyadeep Saha</a></h4>
-							<span>Dubbing</span>                                
-							<span>"Didn't Even Feel My First Time In Studio With This Team"</span>                                
+							<span>Dubbing</span>
+							<span>"Didn't Even Feel My First Time In Studio With This Team"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_42.jpg']; ?>" alt="Subhasish Das"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_42.jpg" alt="Subhasish Das"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100001066619063&ref=br_rs">Subhasish Das</a></h4>
-							<span>Art</span>                                
-							<span>"Path Was Tough, Cruel, Lonely, But Somehow We Faught It Well"</span>                                
+							<span>Art</span>
+							<span>"Path Was Tough, Cruel, Lonely, But Somehow We Faught It Well"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_41.jpg']; ?>" alt="Biplab Mridha"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_41.jpg" alt="Biplab Mridha"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100003271796983&ref=br_rs">Biplab Mridha</a></h4>
-							<span>Cast</span>                                
-							<span>"They Were To Ruin, Destroy But Together We Shut Their Big Mouth & Shown The Courtesy"</span>                                
+							<span>Cast</span>
+							<span>"They Were To Ruin, Destroy But Together We Shut Their Big Mouth & Shown The Courtesy"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_51.jpg']; ?>" alt="Yuvraj Bhattacharya"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_51.jpg" alt="Yuvraj Bhattacharya"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/yuvaraj.bhattacharyya?ref=br_rs">Yuvraj Bhattacharya</a></h4>
-							<span>PR</span>                                
-							<span>"A Well Wisher"</span>                                
+							<span>PR</span>
+							<span>"A Well Wisher"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_83.jpg']; ?>" alt="M Susmit"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_83.jpg" alt="M Susmit"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/susmit.mondal.98?ref=br_rs">M Susmit</a></h4>
-							<span>Editor</span>                                
-							<span>"All The Best Team"</span>                                
+							<span>Editor</span>
+							<span>"All The Best Team"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_92.jpg']; ?>" alt="Goutam Halder"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_92.jpg" alt="Goutam Halder"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/gksusmit?ref=br_rs">Goutam Halder</a></h4>
-							<span>DI</span>                                
-							<span>"They Kept Me Awake For Nights...Lol"</span>                                
+							<span>DI</span>
+							<span>"They Kept Me Awake For Nights...Lol"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_12.jpg']; ?>" alt="Nil"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_12.jpg" alt="Nil"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100011424186597&ref=br_rs">Nil</a></h4>
-							<span>Singer</span>                                
-							<span>"I Sang The Song 'Sahor' Because It Defines The City Of Joy"</span>                                
+							<span>Singer</span>
+							<span>"I Sang The Song 'Sahor' Because It Defines The City Of Joy"</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="member">
-							<div class="pic"><img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_11.jpg']; ?>" alt="Himaghna Chanda"></div>
+							<div class="pic"><img src="uploads/Disha_Movie_Image_11.jpg" alt="Himaghna Chanda"></div>
 							<h4><a target="_blank" href="https://www.facebook.com/profile.php?id=100001108996657&ref=br_rs">Himaghna Chanda</a></h4>
-							<span>Lyric</span>                                
-							<span>"All The Best"</span>                                
+							<span>Lyric</span>
+							<span>"All The Best"</span>
 						</div>
 					</div>
 				</div>
@@ -612,232 +586,232 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 				<div class="row no-gutters">
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_65.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_65.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_65.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_65.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_1.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_1.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_1.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_1.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_2.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_2.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_2.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_2.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_3.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_3.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_3.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_3.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_4.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_4.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_4.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_4.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_45189.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_45189.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_45189.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_45189.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_8.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_8.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_8.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_8.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_9.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_9.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_9.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_9.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_15.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_15.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_15.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_15.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_16.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_16.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_16.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_16.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_17.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_17.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_17.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_17.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_19.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_19.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_19.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_19.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_18.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_18.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_18.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_18.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_26.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_26.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_26.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_26.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_21.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_21.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_21.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_21.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_24.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_24.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_24.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_24.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_25.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_25.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_25.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_25.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_27.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_27.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_27.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_27.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_28.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_28.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_28.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_28.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_29.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_29.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_29.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_29.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_37.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_37.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_37.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_37.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_40.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_40.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_40.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_40.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_54.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_54.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_54.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_54.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_38.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_38.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_38.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_38.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_55.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_55.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_55.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_55.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_56.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_56.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_56.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_56.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_57.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_57.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_57.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_57.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_58.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_58.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_58.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_58.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_61.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_61.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_61.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_61.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_62.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_62.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_62.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_62.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_63.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_63.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_63.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_63.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_64.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_64.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_64.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_64.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="gallery-item wow fadeInUp">
-							<a href="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_96.jpg']; ?>" class="gallery-popup">
-								<img src="<?php echo $s3ObjectDishaMovie['Disha_Movie_Image_96.jpg']; ?>" alt="Disha Bengali Movie">
+							<a href="uploads/Disha_Movie_Image_96.jpg" class="gallery-popup">
+								<img src="uploads/Disha_Movie_Image_96.jpg" alt="Disha Bengali Movie">
 							</a>
 						</div>
 					</div>
@@ -873,10 +847,10 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 						<div class="form">
 							<div id="sendmessage">Your message has been sent. Thank you!</div>
 							<div id="errormessage"></div>
-							<?php 
-							if(isset($_POST['submit'])){
-								$to = "contact@dishamovie.in";  
-								$from = $_POST['email']; 
+							<?php
+							if (isset($_POST['submit'])) {
+								$to = "contact@dishamovie.in";
+								$from = $_POST['email'];
 								$first_name = $_POST['first_name'];
 								$last_name = '';
 								$subject = "Form submission";
@@ -886,8 +860,8 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 
 								$headers = "From:" . $from;
 								$headers2 = "From:" . $to;
-								mail($to,$subject,$message,$headers);
-								mail($from,$subject2,$message2,$headers2);  
+								mail($to, $subject, $message, $headers);
+								mail($from, $subject2, $message2, $headers2);
 							}
 							?>
 							<form action="" method="post" role="form">
@@ -944,4 +918,5 @@ foreach ($bucketObject['Contents'] as $key => $value) {
 	<script src="contactform/contactform.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>

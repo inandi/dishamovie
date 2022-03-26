@@ -9,3 +9,13 @@ Love, confusion, sex, money, all start happening to Disha at the same time. She 
 But, future has something else in store for her and that becomes the culmination of her journey in this material world.
 
 Disha, is a life, a story, a journey every woman would relate to, in some way or the other.
+
+go to /etc/httpd/conf/httpd.conf  add this code
+
+<VirtualHost *:80>
+    ServerAdmin gobinda.genx@yahoo.in
+    DocumentRoot /var/www/html/dishamovie/
+    ServerName dishamovie.in
+    ErrorLog /var/www/html/dishamovie/logs/disha-movie-error_log
+    CustomLog /var/www/html/dishamovie/logs/disha-movie-common_log common
+</VirtualHost>

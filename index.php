@@ -844,6 +844,8 @@
 						</div>
 					</div>
 					<div class="col-lg-5 col-md-8">
+						<p>We hope you will take some time to explore our website and learn more about what we have to offer. If you have any questions reagrding business, please do not hesitate to mail us. We are always happy to help.</p>
+						<p>Thank you for visiting</p>
 						<div class="form" style="display: none;">
 							<div id="sendmessage">Your message has been sent. Thank you!</div>
 							<div id="errormessage"></div>

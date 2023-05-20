@@ -835,21 +835,21 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-4">
+					<div class="col-lg-8 col-md-8">
 						<div class="info">
 							<div>
 								<i class="ion-ios-email-outline"></i>
-								<p align="justify"><a href="mailto:contact@dishamovie.in?Subject=Website" target="_top">contact@dishamovie.in</a></p>
+								<p align="justify"><a href="mailto:gobinda_nandi@icloud.com?Subject=Disha" target="_top">gobinda_nandi@icloud.com</a></p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-8">
+					<div class="col-lg-5 col-md-8" style="display:none">
 						<div class="form">
 							<div id="sendmessage">Your message has been sent. Thank you!</div>
 							<div id="errormessage"></div>
 							<?php
 							if (isset($_POST['submit'])) {
-								$to = "contact@dishamovie.in";
+								$to = "gobinda_nandi@icloud.com";
 								$from = $_POST['email'];
 								$first_name = $_POST['first_name'];
 								$last_name = '';

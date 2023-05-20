@@ -844,7 +844,7 @@
 						</div>
 					</div>
 					<div class="col-lg-5 col-md-8">
-						<div class="form">
+						<div class="form" style="display: none;">
 							<div id="sendmessage">Your message has been sent. Thank you!</div>
 							<div id="errormessage"></div>
 							<?php

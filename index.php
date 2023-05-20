@@ -835,7 +835,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-8 col-md-8">
+					<div class="col-lg-3 col-md-4">
 						<div class="info">
 							<div>
 								<i class="ion-ios-email-outline"></i>
@@ -843,7 +843,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-8" style="display:none">
+					<div class="col-lg-5 col-md-8">
 						<div class="form">
 							<div id="sendmessage">Your message has been sent. Thank you!</div>
 							<div id="errormessage"></div>

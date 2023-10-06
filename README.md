@@ -10,7 +10,13 @@ But, future has something else in store for her and that becomes the culmination
 
 Disha, is a life, a story, a journey every woman would relate to, in some way or the other.
 
+*******
+
+Technical Note
+
 go to /etc/httpd/conf/httpd.conf  add this code
+add logs directory manually otherwise server restart will throw error
+sudo systemctl restart httpd
 
 <VirtualHost *:80>
     ServerAdmin gobinda.genx@yahoo.in
@@ -18,4 +24,12 @@ go to /etc/httpd/conf/httpd.conf  add this code
     ServerName dishamovie.in
     ErrorLog /var/www/html/dishamovie/logs/disha-movie-error_log
     CustomLog /var/www/html/dishamovie/logs/disha-movie-common_log common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin contact@worlde.in
+    DocumentRoot /var/www/html/worlde/
+    ServerName worlde.in
+    ErrorLog /var/www/html/worlde/logs/worlde-error_log
+    CustomLog /var/www/html/worlde/logs/worlde-common_log common
 </VirtualHost>

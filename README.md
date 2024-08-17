@@ -1,4 +1,4 @@
-# http://dishamovie.in
+# dishamovie.in
 
 A small town girl Disha, travels to Kolkata, with the dream of making it big. She has all kinds of disappointments in life, especially in relationships. She believed that love is a terrible thing that can only make one suffer. Kolkata had something else in store for her. She gets allured to the world of escorts and prostitutes. She felt, she had nothing to lose. She never had love, nor did she get any respect from others, ever. She decides to embark on a journey of an escort. She feels excited with the thought of money, sex, friendship etc.
 
@@ -9,27 +9,3 @@ Love, confusion, sex, money, all start happening to Disha at the same time. She 
 But, future has something else in store for her and that becomes the culmination of her journey in this material world.
 
 Disha, is a life, a story, a journey every woman would relate to, in some way or the other.
-
-*******
-
-Technical Note
-
-go to /etc/httpd/conf/httpd.conf  add this code
-add logs directory manually otherwise server restart will throw error
-sudo systemctl restart httpd
-
-<VirtualHost *:80>
-    ServerAdmin gobinda.genx@yahoo.in
-    DocumentRoot /var/www/html/dishamovie/
-    ServerName dishamovie.in
-    ErrorLog /var/www/html/dishamovie/logs/disha-movie-error_log
-    CustomLog /var/www/html/dishamovie/logs/disha-movie-common_log common
-</VirtualHost>
-
-<VirtualHost *:80>
-    ServerAdmin contact@worlde.in
-    DocumentRoot /var/www/html/worlde/
-    ServerName worlde.in
-    ErrorLog /var/www/html/worlde/logs/worlde-error_log
-    CustomLog /var/www/html/worlde/logs/worlde-common_log common
-</VirtualHost>

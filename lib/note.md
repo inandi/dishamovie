@@ -50,9 +50,9 @@ commands
 
 37  sudo docker build -t dishamovie . 
 39  sudo docker images
-40  sudo docker run -p 80:80 --name dishamovie dishamovie
+40  sudo docker run -p 7699:80 --name dishamovie dishamovie
 
-41  sudo docker run -v $(pwd):/usr/share/nginx/html -d -p 80:80 --name dishamovie  dishamovie
+41  sudo docker run -v $(pwd):/usr/share/nginx/html -d -p 7699:80 --name dishamovie  dishamovie
 
 43  sudo docker container ls
-51  sudo docker run -v $(pwd):/usr/share/nginx/html -d -p 80:80  dishamovie
+51  sudo docker run -v $(pwd):/usr/share/nginx/html -d -p 7699:80  dishamovie

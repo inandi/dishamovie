@@ -1,6 +1,6 @@
 .svn/*
 .phpintel/*
-.logs/*
+logs/
 uploads/.picasaoriginals/*
 uploads/.picasa.ini
 disha_movie.pem

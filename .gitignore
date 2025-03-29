@@ -4,5 +4,6 @@ logs/*_log
 uploads/.picasaoriginals/*
 uploads/.picasa.ini
 disha_movie.pem
+lib/note_copy.md
 
 .DS_Store
